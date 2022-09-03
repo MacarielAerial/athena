@@ -21,8 +21,7 @@ echo "Checking PEP8 compliance..."
 flake8 .
 
 echo "Checking Python types..."
-mypy src
-mypy tests
+mypy .
 
 echo "Running static analysis on code..."
 semgrep --config=auto src
