@@ -5,7 +5,7 @@ from pathlib import Path
 
 from pytest import fixture
 
-from src.gaia.nodes.base_logger import get_base_logger
+from src.athena.nodes.base_logger import get_base_logger
 
 
 @fixture

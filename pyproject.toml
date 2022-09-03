@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "gaia"
+name = "athena"
 version = "0.0.0"
-description = "Template repository for Python projects"
+description = "Unsupervised learning on graph with Graph Variational Autoencoder"
 authors = ["Yifei Yu <yyu.mam2020@london.edu>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-    { include = "gaia", from = "src" }
+    { include = "athena", from = "src" }
 ]
 include = [
     { path = "tests", format = "sdist" }
@@ -16,6 +16,9 @@ include = [
 python = "^3.9"
 dataclasses-json = "^0.5.7"
 python-dotenv = "^0.20.0"
+networkx = "^2.8.6"
+dgl = "^0.9.0"
+dglgo = "^0.0.2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.3.0"
@@ -27,6 +30,7 @@ yamllint = "^1.26.3"
 orjson = "^3.8.0"
 semgrep = "^0.111.1"
 flake8 = "^5.0.4"
+
 
 [build-system]
 requires = ["poetry-core"]
